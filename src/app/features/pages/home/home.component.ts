@@ -35,6 +35,50 @@ import { Component } from '@angular/core';
           </div>
         </div>
       </div>
+
+      <!-- # Work -->
+      <div class="mt-3">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+            <div class="col">
+              <table class="table">
+                <tbody>
+                  <tr>Tecnologie utilizzate</tr>
+                  <tr>lista di icone delle varie tecnologie, magari racchiuse da cards? suddivise per categorie?</tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- right column -->
+            <div class="col">
+              img
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- # About -->
+      <div class="mt-3">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+            <div class="col">
+              <table class="table">
+                <tbody>
+                  <tr>About</tr>
+                  <tr>sport, interessi</tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- right column -->
+            <div class="col">
+              img
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   `,
   styles: [
@@ -48,7 +92,7 @@ import { Component } from '@angular/core';
     }
 
     .container-sm {
-      background-color: #d9fffe;
+      /* background-color: #d9fffe; */
     }
     `
   ]

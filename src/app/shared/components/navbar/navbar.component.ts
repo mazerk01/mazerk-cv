@@ -4,24 +4,24 @@ import { Component } from '@angular/core';
   selector: 'app-navbar',
   template: `
     <div class="todo container-fluid">
-      <div class="row">
-        <div class="col">
-          <a>Home</a>
+      <div class="row justify-content-between">
+        <div class="col-4 text-start">
+          logo
         </div>
 
-        <div class="col">
-          <a>About</a>
+        <div class="col-4">
+          <div class="d-flex justify-content-between">
+            <a>Home</a>
+
+            <a>About</a>
+
+            <a>Projects</a>
+
+            <a>Selettore Lingua</a>
+          </div>
         </div>
 
-        <div class="col">
-          <a>Projects</a>
-        </div>
-
-        <div class="col">
-          <a>Selettore Lingua</a>
-        </div>
-
-        <div class="col">
+        <div class="col-4 text-end">
           <a>Contattami</a>
         </div>
       </div>

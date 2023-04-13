@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   template: `
-    <div class="todo container-fluid py-4">
+    <div class="container-fluid py-4">
       <div class="row justify-content-between">
         <div class="col-4 text-start">
           logo
@@ -30,9 +30,6 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
-    .todo {
-      /* filter: drop-shadow(0px 0px 16px #363636); */
-    }
     `
   ]
 })

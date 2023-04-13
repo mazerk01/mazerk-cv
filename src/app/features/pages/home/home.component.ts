@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
     <div class="container-fluid">
       <app-navbar></app-navbar>
     </div>
-
     <div class="container-sm">100% wide until small breakpoint</div>
   `,
   styles: [

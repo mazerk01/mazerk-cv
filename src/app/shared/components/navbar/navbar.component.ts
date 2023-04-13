@@ -25,6 +25,7 @@ import { Component } from '@angular/core';
           <a>Contattami</a>
         </div>
       </div>
+
     </div>
   `,
   styles: [

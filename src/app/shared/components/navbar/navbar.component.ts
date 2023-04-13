@@ -13,9 +13,9 @@ import { Component } from '@angular/core';
           <div class="d-flex justify-content-between">
             <a>Home</a>
 
-            <a>About</a>
+            <a>Work</a>
 
-            <a>Projects</a>
+            <a>About</a>
 
             <a>Selettore Lingua</a>
           </div>

@@ -11,12 +11,12 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
-    body {
-      background-color: #d9fffe;
-    }
-
     .container-fluid {
       padding: 0;
+    }
+
+    .container-sm {
+      background-color: #d9fffe;
     }
     `
   ]

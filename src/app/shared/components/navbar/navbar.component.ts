@@ -4,13 +4,34 @@ import { Component } from '@angular/core';
   selector: 'app-navbar',
   template: `
     <div class="todo container-fluid">
-      home | about | projects | contact | selettore lingua (ita/eng)
+      <div class="row">
+        <div class="col">
+          <a>Home</a>
+        </div>
+
+        <div class="col">
+          <a>About</a>
+        </div>
+
+        <div class="col">
+          <a>Projects</a>
+        </div>
+
+        <div class="col">
+          <a>Selettore Lingua</a>
+        </div>
+
+        <div class="col">
+          <a>Contattami</a>
+        </div>
+      </div>
+
     </div>
   `,
   styles: [
     `
     .todo {
-      background-color: blue;
+      /* filter: drop-shadow(0px 0px 16px #363636); */
     }
     `
   ]

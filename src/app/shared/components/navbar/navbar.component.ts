@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   template: `
-    <div class="todo container-fluid">
+    <div class="todo container-fluid py-4">
       <div class="row justify-content-between">
         <div class="col-4 text-start">
           logo
@@ -11,13 +11,13 @@ import { Component } from '@angular/core';
 
         <div class="col-4">
           <div class="d-flex justify-content-between">
-            <a>Home</a>
+            <a class="fw-semibold fs-5 text-decoration-none text-dark">Home</a>
 
-            <a>Work</a>
+            <a class="fw-semibold fs-5 text-decoration-none text-dark">Work</a>
 
-            <a>About</a>
+            <a class="fw-semibold fs-5 text-decoration-none text-dark">About</a>
 
-            <a>Selettore Lingua</a>
+            <a class="fw-semibold fs-5 text-decoration-none text-dark">Selettore Lingua</a>
           </div>
         </div>
 

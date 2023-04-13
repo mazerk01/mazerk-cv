@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   template: `
     <!-- Navbar -->
-    <div class="container-fluid">
+    <div id="navbar" class="container-fluid">
       <app-navbar></app-navbar>
     </div>
 
-    <div class="container-sm">
-      <!-- 100% wide until small breakpoint -->
+    <!-- 100% wide until small breakpoint -->
+    <div class="mt-2 container-sm">
 
       <!-- # Home -->
       <div>
@@ -17,7 +17,6 @@ import { Component } from '@angular/core';
           <div class="row">
             <!-- left column -->
             <div class="col">
-
               <table class="table">
                 <tbody>
                   <tr>Hi, I'm</tr>
@@ -41,7 +40,11 @@ import { Component } from '@angular/core';
   styles: [
     `
     .container-fluid {
-      padding: 0;
+      /* padding: 0; */
+    }
+
+    #navbar {
+      box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.10);
     }
 
     .container-sm {

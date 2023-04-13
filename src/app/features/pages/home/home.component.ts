@@ -7,7 +7,24 @@ import { Component } from '@angular/core';
     <div class="container-fluid">
       <app-navbar></app-navbar>
     </div>
-    <div class="container-sm">100% wide until small breakpoint</div>
+
+    <div class="container-sm">
+      <!-- 100% wide until small breakpoint -->
+
+      <!-- # Home -->
+      <div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              Hi
+            </div>
+            <div class="col">
+              img
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   `,
   styles: [
     `

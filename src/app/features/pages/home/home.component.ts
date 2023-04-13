@@ -15,9 +15,21 @@ import { Component } from '@angular/core';
       <div>
         <div class="container-fluid">
           <div class="row">
+            <!-- left column -->
             <div class="col">
-              Hi
+
+              <table class="table">
+                <tbody>
+                  <tr>Hi, I'm</tr>
+                  <tr>Giorgio Emilio Gaviria</tr>
+                  <tr>Analyst Programmer</tr>
+                  <tr>Bottone per scaricare il file</tr>
+                  <tr>LinkedIn + GitHub</tr>
+                </tbody>
+              </table>
             </div>
+
+            <!-- right column -->
             <div class="col">
               img
             </div>

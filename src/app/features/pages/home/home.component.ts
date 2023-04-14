@@ -35,69 +35,72 @@ import { Component } from '@angular/core';
       <!-- # Home -->
       <div>
         <div id="homeAnchor" class="container-fluid">
-          <div class="row">
-            <!-- left column -->
-            <div class="col">
-              <table class="table">
-                <tbody>
-                  <tr>Hi, I'm</tr>
-                  <tr>Giorgio Emilio Gaviria</tr>
-                  <tr>Analyst Programmer</tr>
-                  <tr>Bottone per scaricare il file</tr>
-                  <tr>LinkedIn + GitHub</tr>
-                </tbody>
-              </table>
+          <section>
+            <div class="row">
+              <!-- left column -->
+              <div class="col">
+                <table class="table">
+                  <tbody>
+                    <tr>Hi, I'm</tr>
+                    <tr>Giorgio Emilio Gaviria</tr>
+                    <tr>Analyst Programmer</tr>
+                    <tr>Bottone per scaricare il file</tr>
+                    <tr>LinkedIn + GitHub</tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- right column -->
+              <div class="col">
+                img
+              </div>
             </div>
-
-            <!-- right column -->
-            <div class="col">
-              img
-            </div>
-          </div>
+          </section>
         </div>
       </div>
 
       <!-- # Work -->
       <div class="mt-3">
         <div id="workAnchor" class="container-fluid">
-          <div class="row">
-            <!-- left column -->
-            <div class="col">
-              <table class="table">
-                <tbody>
-                  <tr>Tecnologie utilizzate</tr>
-                  <tr>lista di icone delle varie tecnologie, magari racchiuse da cards? suddivise per categorie?</tr>
-                </tbody>
-              </table>
+          <section>
+            <div class="row">
+              <!-- left column -->
+              <div class="col">
+                <table class="table">
+                  <tbody>
+                    <tr>Tecnologie utilizzate</tr>
+                    <tr>lista di icone delle varie tecnologie, magari racchiuse da cards? suddivise per categorie?</tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- right column -->
+              <div class="col">
+                img
+              </div>
             </div>
-
-            <!-- right column -->
-            <div class="col">
-              img
-            </div>
-          </div>
+          </section>
         </div>
       </div>
 
       <!-- # About -->
       <div class="mt-3">
         <div id="aboutAnchor" class="container-fluid">
-          <div class="row">
-            <!-- left column -->
-            <div class="col">
-              <table class="table">
-                <tbody>
-                  <tr>About</tr>
-                  <tr>sport, interessi</tr>
-                </tbody>
-              </table>
+          <section>
+            <div class="row">
+              <!-- left column -->
+              <div class="col">
+                <table class="table">
+                  <tbody>
+                    <tr>About</tr>
+                    <tr>sport, interessi</tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- right column -->
+              <div class="col">
+                img
+              </div>
             </div>
-
-            <!-- right column -->
-            <div class="col">
-              img
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -106,6 +109,10 @@ import { Component } from '@angular/core';
     `
     html {
       scroll-behavior: smooth;
+    }
+
+    section {
+      height: 100vh;
     }
 
     .container-fluid {

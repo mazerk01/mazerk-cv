@@ -1,11 +1,32 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   template: `
     <!-- Navbar -->
-    <div id="navbar" class="container-fluid">
-      <app-navbar></app-navbar>
+    <div id="navbar" class="container-fluid py-4">
+      <div class="row justify-content-between">
+        <div class="col-4 text-start">
+          logo
+        </div>
+
+        <div class="col-4">
+          <div class="d-flex justify-content-between">
+            <a class="fw-semibold fs-5 text-decoration-none text-dark" (click)="onClickScroll('homeAnchor')">Home</a>
+
+            <a class="fw-semibold fs-5 text-decoration-none text-dark" (click)="onClickScroll('workAnchor')">Work</a>
+
+            <a class="fw-semibold fs-5 text-decoration-none text-dark" (click)="onClickScroll('aboutAnchor')">About</a>
+
+            <a class="fw-semibold fs-5 text-decoration-none text-dark">Selettore Lingua</a>
+          </div>
+        </div>
+
+        <div class="col-4 text-end">
+          <a>Contattami</a>
+        </div>
+      </div>
     </div>
 
     <!-- 100% wide until small breakpoint -->
@@ -13,7 +34,7 @@ import { Component } from '@angular/core';
 
       <!-- # Home -->
       <div>
-        <div class="container-fluid">
+        <div id="homeAnchor" class="container-fluid">
           <div class="row">
             <!-- left column -->
             <div class="col">
@@ -38,7 +59,7 @@ import { Component } from '@angular/core';
 
       <!-- # Work -->
       <div class="mt-3">
-        <div class="container-fluid">
+        <div id="workAnchor" class="container-fluid">
           <div class="row">
             <!-- left column -->
             <div class="col">
@@ -60,7 +81,7 @@ import { Component } from '@angular/core';
 
       <!-- # About -->
       <div class="mt-3">
-        <div class="container-fluid">
+        <div id="aboutAnchor" class="container-fluid">
           <div class="row">
             <!-- left column -->
             <div class="col">
@@ -83,6 +104,10 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
+    html {
+      scroll-behavior: smooth;
+    }
+
     .container-fluid {
       /* padding: 0; */
     }
@@ -98,5 +123,11 @@ import { Component } from '@angular/core';
   ]
 })
 export class HomeComponent {
+
+  constructor ( private viewportScroller: ViewportScroller) {}
+
+  onClickScroll(anchorId: string) {
+    this.viewportScroller.scrollToAnchor(anchorId);
+  }
 
 }

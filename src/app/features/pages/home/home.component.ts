@@ -51,7 +51,11 @@ import { Component } from '@angular/core';
               </div>
               <!-- right column -->
               <div class="col">
-                img
+                <div class="rocketBg rounded-5">
+                  <div class="rocketGlass">
+                    <img src="../assets/images/rocketGirl.png" alt="" width="900px">
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -111,21 +115,26 @@ import { Component } from '@angular/core';
       scroll-behavior: smooth;
     }
 
-    section {
-      height: 100vh;
-    }
-
-    .container-fluid {
-      /* padding: 0; */
-    }
-
     #navbar {
       box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.10);
     }
 
-    .container-sm {
-      /* background-color: #d9fffe; */
+    section {
+      height: 100vh;
     }
+
+    .rocketBg {
+      background: rgb(148,249,255);
+      background: linear-gradient(175deg, rgba(148,249,255,1) 0%, rgba(122,227,255,1) 100%);
+    }
+
+    /* .rocketGlass {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+    } */
     `
   ]
 })

@@ -23,8 +23,8 @@ import { Component } from '@angular/core';
           </div>
         </div>
 
-        <div class="col-4 text-end">
-          <a>Contattami</a>
+        <div class="col-4 text-end pe-4">
+          <button type="button" class="btn btn-outline-secondary fw-semibold fs-6">Contact me</button>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@ import { Component } from '@angular/core';
               <div id="homeRightCol" class="container-sm">
                 <div class="row">
                   <div class="col">
-                    <div class="rocketBg rounded-4">
+                    <div class="mt-4 rocketBg rounded-4">
                       <div class="rocketGlass">
                         <img src="/assets/images/home.png" alt="" width="500px">
                       </div>

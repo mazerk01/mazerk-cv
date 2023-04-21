@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
     <!-- Navbar -->
     <div id="navbar" class="container-fluid py-4">
       <div class="row justify-content-between">
-        <div class="col-4 text-start">
-          logo
+        <div class="col-4 ps-4 text-start">
+          <img src="/assets/images/letterm.png" alt="" width="32px" height="32px">
         </div>
 
         <div class="col-4">
@@ -36,7 +36,7 @@ import { Component } from '@angular/core';
         <section id="homeAnchor">
           <div class="row">
             <div class="col">
-              <table class="mt-4 table table-borderless bg-white rounded-3" style="width: 50%;">
+              <table class="mt-4 table table-borderless rounded-3" style="width: 50%;">
                 <tbody>
                   <tr class="fs-5">Hi, I'm</tr>
                   <tr class="fs-2 fw-bold">WILLY ANDREA MARTINEZ</tr>
@@ -51,9 +51,9 @@ import { Component } from '@angular/core';
               <div id="homeRightCol" class="container-sm">
                 <div class="row">
                   <div class="col">
-                    <div class="rocketBg rounded-5">
+                    <div class="rocketBg rounded-4">
                       <div class="rocketGlass">
-                        <img src="/assets/images/home.png" alt="" width="600px">
+                        <img src="/assets/images/home.png" alt="" width="500px">
                       </div>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ import { Component } from '@angular/core';
     }
 
     #bgHome {
-      background: #5352ed;
+      /* background: #5352ed; */
     }
 
     #homeRightCol {
@@ -134,7 +134,7 @@ import { Component } from '@angular/core';
     }
 
     .rocketBg {
-      /* background-image: url("/assets/images/blobHome.svg"); */
+      background: #5352ed;
     }
 
     /* .rocketGlass {

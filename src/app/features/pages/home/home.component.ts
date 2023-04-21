@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
     <!-- Navbar -->
     <div id="navbar" class="container-fluid py-4">
       <div class="row justify-content-between">
-        <div class="col-4 text-start">
-          logo
+        <div class="col-4 ps-4 text-start">
+          <img src="/assets/images/letterm.png" alt="" width="32px" height="32px">
         </div>
 
         <div class="col-4">
@@ -23,48 +23,50 @@ import { Component } from '@angular/core';
           </div>
         </div>
 
-        <div class="col-4 text-end">
-          <a>Contattami</a>
+        <div class="col-4 text-end pe-4">
+          <button type="button" class="btn btn-outline-secondary fw-semibold fs-6">Contact me</button>
         </div>
       </div>
     </div>
 
-    <!-- 100% wide until small breakpoint -->
-    <div class="mt-2 container-sm">
+    <div class="container-fluid p-0">
 
       <!-- # Home -->
-      <div>
-        <div id="homeAnchor" class="container-fluid">
-          <section>
-            <div class="row">
-              <!-- left column -->
-              <div class="col">
-                <table class="table">
-                  <tbody>
-                    <tr>Hi, I'm</tr>
-                    <tr>Giorgio Emilio Gaviria</tr>
-                    <tr>Analyst Programmer</tr>
-                    <tr>Bottone per scaricare il file</tr>
-                    <tr>LinkedIn + GitHub</tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- right column -->
-              <div class="col">
-                <div class="rocketBg rounded-5">
-                  <div class="rocketGlass">
-                    <img src="../assets/images/rocketGirl.png" alt="" width="900px">
+      <div id="bgHome" class="container-fluid">
+        <section id="homeAnchor">
+          <div class="row">
+            <div class="col">
+              <table class="mt-4 table table-borderless rounded-3" style="width: 50%;">
+                <tbody>
+                  <tr class="fs-5">Hi, I'm</tr>
+                  <tr class="fs-2 fw-bold">WILLY ANDREA MARTINEZ</tr>
+                  <tr class="fs-3 fw-medium">ANALYST PROGRAMMER</tr>
+                  <tr class="fs-5">Bottone per scaricare il file</tr>
+                  <tr class="fs-5">LinkedIn + GitHub</tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col">
+              <div id="homeRightCol" class="container-sm">
+                <div class="row">
+                  <div class="col">
+                    <div class="mt-4 rocketBg rounded-4">
+                      <div class="rocketGlass">
+                        <img src="/assets/images/home.png" alt="" width="500px">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
 
       <!-- # Work -->
       <div class="mt-3">
-        <div id="workAnchor" class="container-fluid">
+        <div id="workAnchor" class="container-sm">
           <section>
             <div class="row">
               <!-- left column -->
@@ -87,7 +89,7 @@ import { Component } from '@angular/core';
 
       <!-- # About -->
       <div class="mt-3">
-        <div id="aboutAnchor" class="container-fluid">
+        <div id="aboutAnchor" class="container-sm">
           <section>
             <div class="row">
               <!-- left column -->
@@ -123,17 +125,27 @@ import { Component } from '@angular/core';
       height: 100vh;
     }
 
+    #bgHome {
+      /* background: #5352ed; */
+    }
+
+    #homeRightCol {
+      /* background-image: url("/assets/images/modern.jpg"); */
+    }
+
     .rocketBg {
-      background: rgb(148,249,255);
-      background: linear-gradient(175deg, rgba(148,249,255,1) 0%, rgba(122,227,255,1) 100%);
+      background: #5352ed;
     }
 
     /* .rocketGlass {
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(255, 255, 255, 0.75);
-      border-radius: 12px;
-      border: 1px solid rgba(209, 213, 219, 0.3);
+      width: 60%;
+      margin-left: 9.6em;
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
     } */
     `
   ]
